@@ -1,0 +1,8 @@
+.btn-warm {
+    color: $primary;
+transition: .25 all;
+    &:hover {
+        background-color: $primary;
+        border: none;
+    }
+}

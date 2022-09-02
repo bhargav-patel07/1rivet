@@ -1,0 +1,30 @@
+.sidebar {
+    
+    .brand{
+        height: 70px;
+    }
+    .nav-text{
+        
+        font-size: large;
+    }
+    .nav-link{
+        color: $secondary;
+        transition: .25s all;
+        height: 140px;
+        &:hover{
+            color: $primary;
+            font-weight: 700;
+            background-color: lighten($color: $primary, $amount: 50%);
+        }
+    }
+}
+aside{
+    width: 185px;
+}
+.active{
+    background-color:hsl(200deg 50% 98%);
+}
+.icone-aside{
+    color: $secondary;
+    font-size: 30px;
+}
