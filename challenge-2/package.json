@@ -1,0 +1,12 @@
+{
+  "name": "challenge-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

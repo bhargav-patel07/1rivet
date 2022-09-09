@@ -1,0 +1,19 @@
+html,
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: $body-color;
+}
+ul li{
+    list-style-type: none;
+}
+ul{
+    padding-left: 0;
+}
+nav{
+    margin: 0;
+    padding: 0;
+}

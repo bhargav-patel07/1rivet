@@ -1,0 +1,9 @@
+
+:hover.nav-item{
+    font-weight: 500;
+    color:#0e6cc4;
+   background-color: lighten($color:#0e6cc4, $amount: 40%);
+}
+.position-realative{
+    position: relative;
+}
