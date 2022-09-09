@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assest/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Table</h1>
+        </div>
+        <div class="search">
+            <input type="text" id="search-bar" placeholder="search" onkeyup="filterData()">
+            <input type="button" value="search"><br>
+        </div>
+        <div class="table-wrapper">
+            <table id="table-data">
+                <thead>
+                    <th>name.</th>
+                    <th>email id.</th>
+                    <th>mobile no.</th>
+                    <th>city</th>
+                </thead>
+            </table>
+        </div>
+        <div class="btn">
+            <button class="buton">add user</button>
+        </div>
+        <!-- pop up -->
+
+    </div>
+    <div class="pop-up">
+        <div class="popup-wrapper" style="display: none;">
+            <span class="fa-solid fa-rectangle-xmark  cancle"></span>
+            <h2>add intern</h2>
+            <div>
+                <lable>name</lable>
+                <input type="text" name="name" class="name">
+            </div>
+            <div>
+                <lable>mail id</lable>
+                <input type="text" name="name" class="name">
+            </div>
+            <div>
+                <lable>mobile </lable>
+                <input type="text" name="name" class="name">
+            </div>
+            <div>
+                <input type="button" value="submit" class="submit-button">
+            </div>
+        </div>
+
+    </div>
+    <script src="assest/js/html.js"></script>
+</body>
+
+</html>
