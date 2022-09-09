@@ -19,7 +19,7 @@
 <body>
     <div class="d-flex h-100">
         <!-- start : aside -->
-        <aside class="sidebar shadow">
+        <aside class="sidebar position-relative shadow">
             <div class="brand d-flex align-items-center justify-content-center overflow-hidden">
                 <a href="">
                     <img src="/assets/images/download.png" alt="logo">
@@ -27,10 +27,10 @@
             </div>
             <nav>
                 <ul class="nav-list p-0 m-0">
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                         <a href=""
-                            class="nav-link d-flex flex-column justify-content-center align-items-center px-3 py-2 text-decoration-none ">
-                            <span class="fa-solid fa-gauge-high mb-1 icone-aside mb-4"></span>
+                            class="nav-link active d-flex flex-column justify-content-center align-items-center px-3 py-2 text-decoration-none ">
+                            <span class="fa-solid fa-gauge-high mb-1 mb-4 icone-aside"></span>
                             <span class="nav-text"> Dashbord</span>
                         </a>
                     </li>
@@ -44,14 +44,14 @@
                     <li class="nav-item">
                         <a href=""
                             class="nav-link d-flex flex-column justify-content-center align-items-center px-3 py-2 text-decoration-none">
-                            <span class="fa-solid fa-landmark mb-1 icone-aside mb-4"></span>
+                            <span class="fa-solid fa-landmark mb-1 mb-4 icone-aside"></span>
                             <span class="nav-text"> MY Studio</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href=""
                             class="nav-link d-flex flex-column justify-content-center align-items-center px-3 py-2 text-decoration-none">
-                            <span class="fa-solid fa-briefcase mb-1 icone-aside mb-4"></span>
+                            <span class="fa-solid fa-briefcase mb-1 mb-4 icone-aside"></span>
                             <span class="nav-text">Post A Jobs</span>
                         </a>
                     </li>
@@ -82,8 +82,8 @@
         <!-- end : aside -->
         <!-- start : header -->
         <div class="flex-grow-1 d-flex flex-column justify-content-between">
-            <header class="shadow-sm p-4 d-flex justify-content-between">
-                <div class="search-bar">
+            <header class="shadow p-4 d-flex justify-content-between">
+                <div class="search-bar p-4">
                     <a class="fa-solid fa-magnifying-glass text-decoration-none me-4"> <input type="text"
                             class="form-control" placeholder="search"></a>
                 </div>
@@ -104,7 +104,7 @@
             </header>
             <!-- end : header -->
             <!-- start : main -->
-            <main class="p-5 flex-grow-1 overflow-scroll">
+            <main class="p-5 flex-grow-1 overflow-auto">
                 <div class="container-fluid">
                     <h4>DASHBORD</h4>
                     <P>Lorem ipsum dolor sit amet consectetur.</P>
@@ -112,12 +112,12 @@
                     <div class="create-now d-flex justify-content-between  shadow-sm align-items-center mb-3">
                         <div class="d-flex">
 
-                            <span class="fa-solid fa-circle-exclamation align-items-center m-4 icon"></span>
+                          <a>  <span class="fa-solid fa-circle-exclamation align-items-center m-4 icon"></span></a>
                             <p class="m-0 p-3">Lorem ipsum dolor sit amet.</p>
                             <button class="btn btn-primary  shadow m-3"> create new</button>
 
                         </div>
-                        <div class="fa-solid fa-xmark m-2 icon"></div>
+                        <div class="fa-solid fa-xmark me-4 icon"></div>
                     </div>
                     <div class="create-now d-flex justify-content-between  shadow-sm align-items-center mt-3">
                         <div class="d-flex">
@@ -127,13 +127,13 @@
                             <button class="btn btn-warm shadow m-3"> create new</button>
 
                         </div>
-                        <div class="fa-solid fa-xmark m-2 icon"></div>
+                        <div class="fa-solid fa-xmark me-4 icon"></div>
                     </div>
                     <div class="row">
                         <!-- card 1 -->
                         <div class="col-sm-12 col-md-6 ">
                             <div class="shadow-sm mt-5">
-                                <div class="shadow-sm mt-5">
+                                <div class="shadow-sm mt-5 p-3">
                                     <div class="d-flex justify-content-between">
                                         <div class="me-5">
                                             <h4>New brisbant instructor</h4>
@@ -148,11 +148,11 @@
                                 <div class="card overflow-auto p-3">
                                     <table>
                                         <tbody>
-                                            <tr class="shadow-sm mb-3 mt-3 p-5">
+                                            <tr class="border-bottom mb-3 mt-3 p-5">
                                                 <td>
                                                     <div class="d-flex justify-content-between">
                                                         <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
+                                                        <span class="fa-solid fa-clock icon-eye p-3">5 min </span>
                                                     </div>
                                                     <p>Lorem, ipsum. || Lorem, ipsum.</p>
                                                     <div>
@@ -162,11 +162,11 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="shadow-sm mb-3 mt-3 p-5">
+                                            <tr class="border-bottom mb-3 mt-3 p-5">
                                                 <td>
                                                     <div class="d-flex justify-content-between">
                                                         <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
+                                                        <span class="fa-solid fa-clock icon-eye p-3 ">5 min </span>
                                                     </div>
                                                     <p>Lorem, ipsum. || Lorem, ipsum.</p>
                                                     <div>
@@ -176,11 +176,11 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="shadow-sm mb-3 mt-3 p-5">
+                                            <tr class="border-bottom mb-3 mt-3 p-5">
                                                 <td>
                                                     <div class="d-flex justify-content-between">
                                                         <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
+                                                        <span class="fa-solid fa-clock icon-eye p-3">5 min </span>
                                                     </div>
                                                     <p>Lorem, ipsum. || Lorem, ipsum.</p>
                                                     <div>
@@ -190,11 +190,11 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="shadow-sm mb-3 mt-3 p-5">
+                                            <tr class="border-bottom mb-3 mt-3 p-5">
                                                 <td>
                                                     <div class="d-flex justify-content-between">
                                                         <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
+                                                        <span class="fa-solid fa-clock icon-eye p-3 ">5 min </span>
                                                     </div>
                                                     <p>Lorem, ipsum. || Lorem, ipsum.</p>
                                                     <div>
@@ -204,11 +204,11 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="shadow-sm mb-3 mt-3 p-5">
+                                            <tr class="border-bottom mb-3 mt-3 p-5">
                                                 <td>
                                                     <div class="d-flex justify-content-between">
                                                         <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
+                                                        <span class="fa-solid fa-clock icon-eye p-3">5 min </span>
                                                     </div>
                                                     <p>Lorem, ipsum. || Lorem, ipsum.</p>
                                                     <div>
@@ -218,11 +218,11 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="shadow-sm mb-3 mt-3 p-5">
+                                            <tr class="border-bottom mb-3 mt-3 p-5">
                                                 <td>
                                                     <div class="d-flex justify-content-between">
                                                         <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
+                                                        <span class="fa-solid fa-clock icon-eye p-3">5 min </span>
                                                     </div>
                                                     <p>Lorem, ipsum. || Lorem, ipsum.</p>
                                                     <div>
@@ -232,11 +232,11 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="shadow-sm mb-3 mt-3 p-5">
+                                            <tr class="border-bottom mb-3 mt-3 p-5">
                                                 <td>
                                                     <div class="d-flex justify-content-between">
                                                         <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
+                                                        <span class="fa-solid fa-clock icon-eye p-3 ">5 min </span>
                                                     </div>
                                                     <p>Lorem, ipsum. || Lorem, ipsum.</p>
                                                     <div>
@@ -246,11 +246,11 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr class="shadow-sm mb-3 mt-3 p-5">
+                                            <tr class="border-bottom mb-3 mt-3 p-5">
                                                 <td>
                                                     <div class="d-flex justify-content-between">
                                                         <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
+                                                        <span class="fa-solid fa-clock icon-eye p-3">5 min </span>
                                                     </div>
                                                     <p>Lorem, ipsum. || Lorem, ipsum.</p>
                                                     <div>
@@ -260,7 +260,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
-    
+
                                         </tbody>
                                     </table>
                                 </div>
@@ -269,7 +269,7 @@
                         <!-- card 2 -->
                         <div class="col-sm-12 col-md-6 ">
                             <div class=" shadow-sm mt-5">
-                                <div class="shadow-sm mt-5">
+                                <div class="shadow-sm mt-5 p-3">
                                     <div class="d-flex justify-content-between">
                                         <div class="me-5">
                                             <h4>New brisbant instructor</h4>
@@ -284,663 +284,85 @@
                                 <div class="card overflow-auto p-3">
                                     <table>
                                         <tbody>
-                                            <tr class="shadow-sm mx-3 p-5">
+                                            <tr class="border-bottom mx-3 p-5">
                                                 <td>
-                                                    <div class="d-flex justify-content-between">
+                                                    <div class="d-flex justify-content-between p-3">
                                                         <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
+                                                        <span class="fa-solid fa-clock icon-eye p-3 ">5 min </span>
                                                     </div>
                                                     <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
                                                 </td>
                                             </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
+                                            <tr class="border-bottom mx-3 p-5">
                                                 <td>
-                                                    <div class="d-flex justify-content-between">
+                                                    <div class="d-flex justify-content-between p-3">
                                                         <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
+                                                        <span class="fa-solid fa-clock icon-eye p-3 ">5 min </span>
                                                     </div>
                                                     <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
+                                                   
                                                 </td>
                                             </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
+                                            <tr class="border-bottom mx-3 p-5">
                                                 <td>
-                                                    <div class="d-flex justify-content-between">
+                                                    <div class="d-flex justify-content-between p-3">
                                                         <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
+                                                        <span class="fa-solid fa-clock icon-eye p-3 ">5 min </span>
                                                     </div>
                                                     <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
+                                                   
                                                 </td>
                                             </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
+                                            <tr class="border-bottom mx-3 p-5">
                                                 <td>
-                                                    <div class="d-flex justify-content-between">
+                                                    <div class="d-flex justify-content-between p-3">
                                                         <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
+                                                        <span class="fa-solid fa-clock icon-eye p-3 ">5 min </span>
                                                     </div>
                                                     <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
+                                                    
                                                 </td>
                                             </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
+                                            <tr class="border-bottom mx-3 p-5">
                                                 <td>
-                                                    <div class="d-flex justify-content-between">
+                                                    <div class="d-flex justify-content-between p-3">
                                                         <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
+                                                        <span class="fa-solid fa-clock icon-eye p-3 ">5 min </span>
                                                     </div>
                                                     <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
+                                                   
                                                 </td>
                                             </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
+                                            <tr class="border-bottom mx-3 p-5">
                                                 <td>
-                                                    <div class="d-flex justify-content-between">
+                                                    <div class="d-flex justify-content-between p-3">
                                                         <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
+                                                        <span class="fa-solid fa-clock icon-eye p-3 ">5 min </span>
                                                     </div>
                                                     <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
+                                                    
                                                 </td>
                                             </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
+                                            <tr class="border-bottom mx-3 p-5">
                                                 <td>
-                                                    <div class="d-flex justify-content-between">
+                                                    <div class="d-flex justify-content-between p-3">
                                                         <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
+                                                        <span class="fa-solid fa-clock icon-eye p-3 ">5 min </span>
                                                     </div>
                                                     <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
+                                                    
                                                 </td>
                                             </tr>
-                                            <tr class="shadow-sm mx3 p-5">
+                                            <tr class="border-bottom mx3 p-5">
                                                 <td>
-                                                    <div class="d-flex justify-content-between">
+                                                    <div class="d-flex justify-content-between p-3">
                                                         <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
+                                                        <span class="fa-solid fa-clock icon-eye p-3 ">5 min </span>
                                                     </div>
                                                     <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
+                                                   
                                                 </td>
                                             </tr>
-                                            
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- card 3 -->
-                        <div class="col-sm-12 col-md-6 ">
-                            <div class=" shadow-sm mt-5">
-                                <div class="shadow-sm mt-5">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="me-5">
-                                            <h4>New brisbant instructor</h4>
-                                        </div>
-                                        <div class="d-flex me-0">
-                                            <span class="fa-solid fa-eye icon me-2"></span>
-                                            <h6 class="me-2">view all</h6>
-                                            <span class="fa-regular fa-square-caret-right icon"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card overflow-auto p-3">
-                                    <table>
-                                        <tbody>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- card 4 -->
-                        <div class="col-sm-12 col-md-6 ">
-                            <div class=" shadow-sm mt-5">
-                                <div class="shadow-sm mt-5">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="me-5">
-                                            <h4>New brisbant instructor</h4>
-                                        </div>
-                                        <div class="d-flex me-0">
-                                            <span class="fa-solid fa-eye icon me-2"></span>
-                                            <h6 class="me-2">view all</h6>
-                                            <span class="fa-regular fa-square-caret-right icon"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card overflow-auto p-3">
-                                    <table>
-                                        <tbody>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- card 5 -->
-                        <div class="col-sm-12 col-md-6 ">
-                            <div class=" shadow-sm mt-5">
-                                <div class="shadow-sm mt-5">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="me-5">
-                                            <h4>New brisbant instructor</h4>
-                                        </div>
-                                        <div class="d-flex me-0">
-                                            <span class="fa-solid fa-eye icon me-2"></span>
-                                            <h6 class="me-2">view all</h6>
-                                            <span class="fa-regular fa-square-caret-right icon"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card overflow-auto p-3">
-                                    <table>
-                                        <tbody>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- card 6 -->
-                        <div class="col-sm-12 col-md-6 ">
-                            <div class=" shadow-sm mt-5">
-                                <div class="shadow-sm mt-5">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="me-5">
-                                            <h4>New brisbant instructor</h4>
-                                        </div>
-                                        <div class="d-flex me-0">
-                                            <span class="fa-solid fa-eye icon me-2"></span>
-                                            <h6 class="me-2">view all</h6>
-                                            <span class="fa-regular fa-square-caret-right icon"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card overflow-auto p-3">
-                                    <table>
-                                        <tbody>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx-3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="shadow-sm mx3 p-5">
-                                                <td>
-                                                    <div class="d-flex justify-content-between">
-                                                        <h4>thomas budman</h4>
-                                                        <span class="fa-solid fa-eye icon ">5 min </span>
-                                                    </div>
-                                                    <p>Lorem, ipsum. || Lorem, ipsum.</p>
-                                                    <div>
-                                                        <button class="btn btn-warm shadow m-3 me-2">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                        <button class="btn btn-warm shadow m-3">lorem</button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            
                                         </tbody>
                                     </table>
                                 </div>

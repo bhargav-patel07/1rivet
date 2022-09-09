@@ -1,30 +1,37 @@
 .sidebar {
     
-    .brand{
-        height: 70px;
+    
+
+    .brand {
+        height: 130px;
     }
-    .nav-text{
-        
-        font-size: large;
+
+    .nav-text {
+        font-size: larger;
     }
-    .nav-link{
-        color: $secondary;
+
+    a {
         transition: .25s all;
-        height: 140px;
-        &:hover{
+        height: 130px;
+        &:hover {
             color: $primary;
-            font-weight: 700;
             background-color: lighten($color: $primary, $amount: 50%);
         }
     }
 }
-aside{
-    width: 185px;
+
+aside {
+    width: 240px;
+    flex: 0 0 200px;
 }
-.active{
-    background-color:hsl(200deg 50% 98%);
+
+.active {
+    color: $primary;
+    background-color: hsl(200deg 50% 98%);
 }
-.icone-aside{
-    color: $secondary;
-    font-size: 30px;
-}
+ a{
+    color: hsl(190deg 16% 63%);
+ }
+ .icone-aside{
+    font-size: 24px;
+ }

@@ -9,15 +9,11 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  font-family: "Poppins", sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 ul {
   list-style: none;
-}
-
-.btn-primary {
-  color: #1a9d8f;
 }
 
 :root {
@@ -64,10 +60,10 @@ ul {
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "poppins", sans serif;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family: poppins, sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -6150,7 +6146,7 @@ progress {
 }
 
 header {
-  height: 70px;
+  height: 130px;
 }
 
 input {
@@ -6171,14 +6167,22 @@ input {
   width: 200px;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .create-now {
   height: 70px;
   width: 100%;
 }
 
 .icon {
+  font-size: 24px;
   color: lightgrey;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 thead {
@@ -6189,34 +6193,45 @@ p {
   color: grey;
 }
 
+main {
+  background-color: hsl(220deg, 43%, 99%);
+}
+
+.icon-eye {
+  color: lightgrey;
+}
+
 .sidebar .brand {
-  height: 70px;
+  height: 130px;
 }
 .sidebar .nav-text {
-  font-size: large;
+  font-size: larger;
 }
-.sidebar .nav-link {
-  color: lightgrey;
+.sidebar a {
   transition: 0.25s all;
-  height: 140px;
+  height: 130px;
 }
-.sidebar .nav-link:hover {
+.sidebar a:hover {
   color: #1a9d8f;
-  font-weight: 700;
   background-color: #c1f5ef;
 }
 
 aside {
-  width: 185px;
+  width: 240px;
+  flex: 0 0 200px;
 }
 
 .active {
+  color: #1a9d8f;
   background-color: hsl(200deg, 50%, 98%);
 }
 
+a {
+  color: hsl(190deg, 16%, 63%);
+}
+
 .icone-aside {
-  color: lightgrey;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .card {
@@ -6230,12 +6245,17 @@ table {
 }
 
 .btn-warm {
+  border: none;
   color: #1a9d8f;
+  background-color: hsl(168deg, 48%, 94%);
   transition: 0.25 all;
 }
 .btn-warm:hover {
+  color: white;
   background-color: #1a9d8f;
-  border: none;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.btn-primary {
+  color: white;
+  background-color: hsl(174deg, 63%, 40%);
+}/*# sourceMappingURL=styles.css.map */

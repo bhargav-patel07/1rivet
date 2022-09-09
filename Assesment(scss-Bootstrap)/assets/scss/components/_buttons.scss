@@ -1,8 +1,15 @@
 .btn-warm {
+    border: none;
     color: $primary;
+    background-color:hsl(168deg 48% 94%);
 transition: .25 all;
     &:hover {
+        color: white;
         background-color: $primary;
-        border: none;
     }
+}
+
+.btn-primary{
+    color: white;
+    background-color: hsl(174deg 63% 40%);
 }
