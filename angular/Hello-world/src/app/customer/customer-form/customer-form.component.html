@@ -1,7 +1,10 @@
-<form #loginForm="ngForm" >
-  <input type="name" required  placeholder="enter firstname" name="name">
-  <input type="name" placeholder="enter lasttname" name="last">
-  <input type="password" placeholder="enter password" name="password">
+<form [formGroup]="loginForm" >
+  <input type="text" placeholder="enter firstname" formControlName="name" class="form-control">
   <br>
-  <button>login</button>
+  <span *ngIf="fun['name'] && fun['name'].invalid && fun['name'].touched || fun['name'].dirty">please enter your name</span><br>
+  <input type="text" placeholder="enter lastname" formControlName="last" class="form-control"><br>
+  <span *ngIf="fun['last'] && fun['last'].invalid && fun['last'].touched">please enter your lastname</span><br>
+  <input type="password" placeholder="enter password" formControlName="password" class="form-control">
+  <br>
+  <button  (click)="onLogin()">login</button>
 </form>

@@ -8,14 +8,16 @@ import { FeaturesModule } from './features/features.module';
 import { HomeComponent } from './home/home.component';
 import { ShareModule } from './share/share.module';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 // import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    NotfoundComponent
-    
+    NotfoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
     CoreModule,
     ShareModule,
     FeaturesModule,
-   
+   ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
