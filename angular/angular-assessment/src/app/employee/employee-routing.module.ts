@@ -6,30 +6,25 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeComponent } from './employee.component';
 
 const routes: Routes = [
+
   {
     path: '',
-    pathMatch: 'full',
-    redirectTo: 'employee-list'
-  },
-  
-  { 
-  path: '', 
-  component: EmployeeComponent ,
-children:[
-  
-  {
-  path:'employee-form',
-  component:EmployeeFormComponent
-},
-{
-  path:'employee-list',
-  component:EmployeeListComponent
-},
-{
-  path:'employee-detail',
-  component:EmployeeDetailComponent
-}]
-}];
+    component: EmployeeComponent,
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        redirectTo: 'employee-form'
+      },
+      {
+        path: 'employee-form',
+        component: EmployeeFormComponent
+      },
+      {
+        path: 'employee-detail',
+        component: EmployeeDetailComponent
+      }]
+  }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

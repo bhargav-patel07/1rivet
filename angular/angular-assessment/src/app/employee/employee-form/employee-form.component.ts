@@ -7,10 +7,13 @@ import { AbstractControl, FormControl, FormGroup, Validators } from '@angular/fo
 })
 export class EmployeeFormComponent implements OnInit {
   public employeeForm: FormGroup;
+  public employeeData: any;
+
   constructor() {
+    this.employeeData = [];
     this.employeeForm = new FormGroup({
       name: new FormControl('', [Validators.required, Validators.minLength(3)]),
-      gender: new FormControl('', [Validators.required, Validators.pattern('[a-zA-Z]+$')]),
+      gender: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z]+$')]),
       dob: new FormControl('', [Validators.required]),
       salary: new FormControl('', [Validators.required, Validators.pattern('^[0-9]+$')])
     })
@@ -22,11 +25,14 @@ export class EmployeeFormComponent implements OnInit {
   get fun(): { [key: string]: AbstractControl } {
     return this.employeeForm.controls;
   }
+
   public reset(): void {
     this.employeeForm.reset();
   }
-  public save(){
-    this.employeeForm.value();
+
+  public save() {
+    this.employeeData.push(this.employeeForm.value);
+    this.employeeForm.reset();
   }
 }
 
